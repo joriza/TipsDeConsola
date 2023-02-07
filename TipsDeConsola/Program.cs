@@ -5,7 +5,19 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Texto normal");
-            impresiones(5);
+            impresiones(3);
+
+            //Limpiar pantalla
+            Console.Clear();
+
+            Console.WriteLine("Color de la fuente");
+            Console.ForegroundColor = ConsoleColor.Green;
+            impresiones(3);
+
+            Console.WriteLine("Color de fondo");
+            Console.BackgroundColor= ConsoleColor.DarkGray;
+            impresiones(3);
+
             Console.ReadKey();
         }
 
