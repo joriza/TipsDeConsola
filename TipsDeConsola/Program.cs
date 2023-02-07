@@ -8,15 +8,31 @@
             impresiones(3);
 
             //Limpiar pantalla
-            Console.Clear();
+            //Console.Clear();
 
             Console.WriteLine("Color de la fuente");
             Console.ForegroundColor = ConsoleColor.Green;
             impresiones(3);
 
             Console.WriteLine("Color de fondo");
-            Console.BackgroundColor= ConsoleColor.DarkGray;
+            Console.BackgroundColor = ConsoleColor.Gray;
             impresiones(3);
+
+            Console.WriteLine("Indicamos ancho de la ventana en cantidad de columnas");
+            Console.BufferWidth = 120; // Tener en cuenta que no puede ser un tamaño menor al de una ventana por defecto.
+            impresiones(3);
+
+            Console.WriteLine("Indicamos ancho de la ventana en cantidad de columnas");
+            Console.BufferHeight = 40; // Tener en cuenta que no puede ser un tamaño menor al de una ventana por defecto.
+            impresiones(3);
+
+            Console.WriteLine("Coloca ventana en una determinada posición");
+            Console.WindowWidth = 80;
+            Console.WindowHeight = 20;
+            impresiones(3);
+            Console.WindowLeft= 5;
+            Console.WindowTop= 2;
+
 
             Console.ReadKey();
         }
