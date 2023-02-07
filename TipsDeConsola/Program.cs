@@ -34,9 +34,6 @@
             Console.WindowTop= 2;
 
 
-
-
-
             Console.ReadKey();
         }
 
